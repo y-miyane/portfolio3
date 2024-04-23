@@ -1,0 +1,21 @@
+
+
+.postagefree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    background-color: #cbbd00;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+.text_red{
+    color: #c91804;
+}
+
+.text_nomal{
+    margin-left: 15px;
+    color: #fff;
+}
