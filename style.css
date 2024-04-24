@@ -19,3 +19,17 @@
     margin-left: 15px;
     color: #fff;
 }
+
+.top_slide img{
+    height: calc(100vh - 46px);
+}
+
+/*about*/
+
+.about{
+    margin-top: 112px;
+    width: 100%;
+    background: url(./image/about.png) bottom center no-repeat;
+    background-size: cover;
+    height: 46rem;
+}
