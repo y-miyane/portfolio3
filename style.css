@@ -221,3 +221,8 @@ footer
 footer{
     margin-top: 120px;
 }
+
+.footer_menu{
+    background-color: #fafafa;
+    padding: 80px 0;
+}
