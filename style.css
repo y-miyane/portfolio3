@@ -34,6 +34,14 @@ ul,li{
     color: #fff;
 }
 
+
+
+
+.top{
+    width: 100%;
+    position: relative;
+}
+
 .top_slide{
     margin-left: 120px;
     position: relative;
@@ -49,6 +57,7 @@ ul,li{
     position: relative;
     overflow: hidden;
     z-index: 1;
+    height: calc(100vh - 46px);
 }
       
 
@@ -61,7 +70,8 @@ ul,li{
 
 
 .top_slide img{
-    height: calc(100vh - 46px);
+    height: 100%;
+    width: 100%;
 }
 
 .logo img{
@@ -212,6 +222,11 @@ faq
     margin-top: 120px;
 }
 
+
+
+
+
+
 /*--------------------------------------
 ----------------------------------------
 footer
@@ -358,4 +373,36 @@ footer{
 .footer_copy{
     border-top: 1px solid #eaeaea;
     padding: 56px 0;
+}
+
+.footer_copy_wrap{
+    position: relative;
+    max-width: 1126px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_copy_wrap_left{
+    display: flex;
+    align-items: center;
+}
+
+
+.footer_copy_address{
+    display: flex;
+}
+
+.footer_copy_address p{
+    font-size: 0.7rem;
+}
+
+.footer_copy_address p + p{
+    margin-left: 10px;
+}
+
+.footer_copy_wrap_right{
+    font-size: 0.7rem;
+    line-height: 1.5;
 }
