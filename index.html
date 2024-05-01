@@ -26,20 +26,30 @@
                     <img src="./image/logo_main.png" alt="">
                 </div>
                 <div class="top_slide">
-                    <ul class="fade">
-                        <li><img src="./image/top1.png" alt=""></li>
-                        <li><img src="./image/top2.png" alt=""></li>
-                        <li><img src="./image/top3.png" alt=""></li>
-                        <li><img src="./image/top4.png" alt=""></li>
-                    </ul>
+                    <div class="top_slide_wrap">
+                        <ul class="fade">
+                            <li>
+                                <img src="./image/top1.png" alt="">
+                            </li>
+                            <li>
+                                <img src="./image/top2.png" alt="">
+                            </li>
+                            <li>
+                                <img src="./image/top3.png" alt="">
+                            </li>
+                            <li>
+                                <img src="./image/top4.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="sns_link_top">
-                    <a href="">
-                        <img src="./image/icon_fb.svg" alt="facebook">
-                    </a>
-                    <a href="">
+                    <a href="" class="sns_link_top_in">
                         <img src="./image/icon_ig.svg" alt="instaglam">
                     </a>
+                    <a href="" class="sns_link_top_fb">
+                        <img src="./image/icon_fb.svg" alt="facebook">
+                    </a>         
                 </div>
 
             </section>
@@ -55,7 +65,9 @@
                                     <div class="brand_text">
                                         クラブハウスレストランの味を食卓に
                                     </div>
-                                    <div class="brand_name"></div>
+                                    <div class="brand_name">
+                                        <img src="./image/top_brand_1.png" alt="">
+                                    </div>
                                 </div>
                             </a>
                         </li>
@@ -75,11 +87,13 @@
                         <li>
                             <a href="">
                                 <div class="brand_img">
-                                    <img src="./image/top_img2.png" alt="いつでもレストラン">
+                                    <img src="./image/top_img3.png" alt="いつでもレストラン">
                                 </div>
                                 <div class="brand_detail">
                                     <div class="brand_text">
-                                        クラブハウスレストランの味を食卓に
+                                        老舗ゴルフ場で60年愛される
+                                        <br>
+                                        伝統のメニュー
                                     </div>
                                     <div class="brand_name"></div>
                                 </div>
@@ -88,26 +102,29 @@
                         <li>
                             <a href="">
                                 <div class="brand_img">
-                                    <img src="./image/top_img2.png" alt="いつでもレストラン">
+                                    <img src="./image/top_img4.png" alt="いつでもレストラン">
                                 </div>
                                 <div class="brand_detail">
                                     <div class="brand_text">
-                                        クラブハウスレストランの味を食卓に
+                                        老舗ゴルフ場で無農薬で育てた
+                                        <br>
+                                        果実のみを使用
                                     </div>
-                                    <div class="brand_name"></div>
+                                    <div class="brand_name">
+                                        <img src="./image/top_brand_4.png" alt="">
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a href="">
                                 <div class="brand_img">
-                                    <img src="./image/top_img2.png" alt="いつでもレストラン">
+                                    <img src="./image/top_img5.png" alt="いつでもレストラン">
                                 </div>
                                 <div class="brand_detail">
                                     <div class="brand_text">
-                                        クラブハウスレストランの味を食卓に
+                                        セレクト商品
                                     </div>
-                                    <div class="brand_name"></div>
                                 </div>
                             </a>
                         </li>
@@ -132,7 +149,7 @@
                         <br>
 				        ひとりでも多くの皆様に三田市を知っていただき、地域経済を元気にできたら幸いです｡
                     </div>
-                    <div class="about_btn">
+                    <div class="detail_btn">
                         <a href="">
                             <span>
                                 詳細はこちら
@@ -163,14 +180,183 @@
             <section class="products">
                 <div class="products_wrap">
                     <div class="products_menu">
-
-                    </div>
-                    <div class="products_all">
-                        <div class="products_list">
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
+                        <div class="products_menu_title">
+                            商品一覧
                         </div>
+                        <ul class="products_menu_nav">
+                            <li class="products_menu_nev_item">
+                                <a href="">
+                                    全ての商品
+                                </a>
+                            </li>
+                            <li class="products_menu_nev_item">
+                                <a href="">
+                                    いつでもレストラン
+                                </a>
+                            </li>
+                            <li class="products_menu_nev_item">
+                                <a href="">
+                                    贅沢ハンバーグ
+                                </a>
+                            </li>
+                            <li class="products_menu_nev_item">
+                                <a href="">
+                                    牛肉ゴロっとカレー
+                                </a>
+                            </li>
+                            <li class="products_menu_nev_item">
+                                <a href="">
+                                    JAM TODAY
+                                </a>
+                            </li>
+                            <li class="products_menu_nev_item">
+                                <a href="">
+                                    セレクト商品
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="products_all">                       
+                        <ul class="products_list">
+                            <li class="products_list_item">
+                                <a href="">
+                                    <img src="./image/ranking.png" alt="">
+                                    <div class="products_list_title">
+                                        特製ビーフカレー（冷凍食品）1個と特製ビーフハヤシ（冷凍食品）1個のお試しセット
+                                    </div>
+                                    <div class="products_list_price">
+                                        <p class="products_list_price_num">
+                                            ￥3,300
+                                        </p>
+                                    </div>
+                                    <div class="products_list_text">
+                                        特製ビーフカレー（冷凍食品）1個と特製ビーフハヤシ（冷凍食品）1個のお試しセット
+                                    </div>
+                                    <div class="products_list_btn">
+                                        <div class="detail_btn">
+                                            <span>詳細はこちら</span>                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="products_list_item">
+                                <a href="">
+                                    <img src="./image/ranking.png" alt="">
+                                    <div class="products_list_title">
+                                        特製ビーフカレー（冷凍食品）3個と特製ビーフハヤシ（冷凍食品）2個のセット
+                                    </div>
+                                    <div class="products_list_price">
+                                        <p class="products_list_price_num">
+                                            ￥5,940
+                                        </p>
+                                        <p class="products_list_price_per">
+                                            10%OFF
+                                        </p>
+                                    </div>
+                                    <div class="products_list_text">
+                                        特製ビーフカレー（冷凍食品）3個と特製ビーフハヤシ（冷凍食品）2個のセット
+                                    </div>
+                                    <div class="products_list_btn">
+                                        <div class="detail_btn">
+                                            <span>詳細はこちら</span>                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="products_list_item">
+                                <a href="">
+                                    <img src="./image/ranking.png" alt="">
+                                    <div class="products_list_title">
+                                        特製ビーフカレー（冷凍食品）5個と特製ビーフハヤシ（冷凍食品）5個のセット
+                                    </div>
+                                    <div class="products_list_price">
+                                        <p class="products_list_price_num">
+                                            ￥10,890
+                                        </p>
+                                        <p class="products_list_price_per">
+                                            10%OFF
+                                        </p>
+                                    </div>
+                                    <div class="products_list_text">
+                                        特製ビーフカレー（冷凍食品）5個と特製ビーフハヤシ（冷凍食品）5個のセット
+                                    </div>
+                                    <div class="products_list_btn">
+                                        <div class="detail_btn">
+                                            <span>詳細はこちら</span>                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="products_list_item">
+                                <a href="">
+                                    <img src="./image/ranking.png" alt="">
+                                    <div class="products_list_title">
+                                        特製ビーフハヤシ（冷凍食品）2個セット
+                                    </div>
+                                    <div class="products_list_price">
+                                        <p class="products_list_price_num">
+                                            ￥3,300
+                                        </p>
+                                    </div>
+                                    <div class="products_list_text">
+                                        特製ビーフハヤシ（冷凍食品）2個セット
+                                    </div>
+                                    <div class="products_list_btn">
+                                        <div class="detail_btn">
+                                            <span>詳細はこちら</span>                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="products_list_item">
+                                <a href="">
+                                    <img src="./image/ranking.png" alt="">
+                                    <div class="products_list_title">
+                                        特製ビーフハヤシ（冷凍食品）5個セット
+                                    </div>
+                                    <div class="products_list_price">
+                                        <p class="products_list_price_num">
+                                            ￥5,940
+                                        </p>
+                                        <p class="products_list_price_per">
+                                            10%OFF
+                                        </p>
+                                    </div>
+                                    <div class="products_list_text">
+                                        特製ビーフハヤシ（冷凍食品）5個セット
+                                    </div>
+                                    <div class="products_list_btn">
+                                        <div class="detail_btn">
+                                            <span>詳細はこちら</span>                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="products_list_item">
+                                <a href="">
+                                    <img src="./image/ranking.png" alt="">
+                                    <div class="products_list_title">
+                                        特製ビーフハヤシ（冷凍食品）10個セット
+                                    </div>
+                                    <div class="products_list_price">
+                                        <p class="products_list_price_num">
+                                            ￥10,890
+                                        </p>
+                                        <p class="products_list_price_per">
+                                            10%OFF
+                                        </p>
+                                    </div>
+                                    <div class="products_list_text">
+                                        特製ビーフハヤシ（冷凍食品）10個セット
+                                    </div>
+                                    <div class="products_list_btn">
+                                        <div class="detail_btn">
+                                            <span>詳細はこちら</span>                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -180,9 +366,75 @@
                         人気ランキング
                     </div>
                     <div class="ranking_list">
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
+                        <a href="">
+                            <div class="ranking_list_1"></div>
+                            <img src="./image/ranking.png" alt="サンプル">
+                            <div class="ranking_list_title">
+                                牛肉ゴロっとカレー 5個セット
+                            </div>
+                            <div class="ranking_list_price">
+                                <p class="ranking_list_price_num">
+                                    ￥4,950
+                                </p>
+                                <p class="ranking_list_price_per">
+                                    10%OFF
+                                </p>
+                            </div>
+                            <div class="ranking_list_text">
+                                「有馬カンツリー倶楽部」の歴代シェフ達が半世紀以上にわたって受け継ぎ守ってきた特製ビーフカレー5個セット。
+                            </div>
+                            <div class="ranking_list_btn">
+								<div class="detail-btn">
+                                    <span>詳細はこちら</span>                
+								</div>
+							</div>
+                        </a>
+                        <a href="">
+                            <div class="ranking_list_1"></div>
+                            <img src="./image/ranking.png" alt="サンプル">
+                            <div class="ranking_list_title">
+                                牛肉ゴロっとカレー 5個セット
+                            </div>
+                            <div class="ranking_list_price">
+                                <p class="ranking_list_price_num">
+                                    ￥4,950
+                                </p>
+                                <p class="ranking_list_price_per">
+                                    10%OFF
+                                </p>
+                            </div>
+                            <div class="ranking_list_text">
+                                「○○カンツリー倶楽部」の歴代シェフ達が半世紀以上にわたって受け継ぎ守ってきた特製ビーフカレー5個セット。
+                            </div>
+                            <div class="ranking_list_btn">
+								<div class="detail-btn">
+                                    <span>詳細はこちら</span>                
+								</div>
+							</div>
+                        </a>
+                        <a href="">
+                            <div class="ranking_list_1"></div>
+                            <img src="./image/ranking.png" alt="サンプル">
+                            <div class="ranking_list_title">
+                                牛肉ゴロっとカレー 5個セット
+                            </div>
+                            <div class="ranking_list_price">
+                                <p class="ranking_list_price_num">
+                                    ￥4,950
+                                </p>
+                                <p class="ranking_list_price_per">
+                                    10%OFF
+                                </p>
+                            </div>
+                            <div class="ranking_list_text">
+                                「○○カンツリー倶楽部」の歴代シェフ達が半世紀以上にわたって受け継ぎ守ってきた特製ビーフカレー5個セット。
+                            </div>
+                            <div class="ranking_list_btn">
+								<div class="detail-btn">
+                                    <span>詳細はこちら</span>                
+								</div>
+							</div>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -190,7 +442,107 @@
                 <div class="news_wrap">
                     <div class="news_title">おしらせ</div>
                 </div>
-                <div class="news_body"></div>
+                <div class="news_body">
+                    <div class="news_body_inner">
+                        <ul class="news_list">
+                            <li class="news_list_item">
+                                <a href="">
+                                    <img src="./image/news_1.png" alt="○○カンツリー倶楽部レストランのお土産コーナーの模様替え">
+                                    <div class="news_list_item_date">
+                                        2024/02/11
+                                    </div>
+                                    <div class="news_list_item_text">
+                                        ○○カンツリー倶楽部レストランのお土産コーナーの模様替え
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="news_list_item">
+                                <a href="">
+                                    <img src="./image/logo.png" alt="冷凍食品「いつでもレストラン」の販売をスタートしました">
+                                    <div class="news_list_item_date">
+                                        2023/10/31
+                                    </div>
+                                    <div class="news_list_item_text">
+                                        冷凍食品「いつでもレストラン」の販売をスタートしました
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="news_list_item">
+                                <a href="">
+                                    <img src="./image/news3.png" alt="「贅沢ハンバーグ」の販売をスタートしました">
+                                    <div class="news_list_item_date">
+                                        2023/09/07
+                                    </div>
+                                    <div class="news_list_item_text">
+                                        「贅沢ハンバーグ」の販売をスタートしました
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="news_list_item">
+                                <a href="">
+                                    <img src="./image/logo.png" alt="【メディア掲載】「食楽web」に掲出されました">
+                                    <div class="news_list_item_date">
+                                        2023/08/27
+                                    </div>
+                                    <div class="news_list_item_text">
+                                        【メディア掲載】「食楽web」に掲出されました
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="news_list_item">
+                                <a href="">
+                                    <img src="./image/logo.png" alt="【メディア掲載】「BizSPA!」に掲出されました">
+                                    <div class="news_list_item_date">
+                                        2023/08/11
+                                    </div>
+                                    <div class="news_list_item_text">
+                                        【メディア掲載】「BizSPA!」に掲出されました
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="news_list_item">
+                                <a href="">
+                                    <img src="./image/logo.png" alt="オンラインショップリニューアルオープンのお知らせ">
+                                    <div class="news_list_item_date">
+                                        2023/06/28
+                                    </div>
+                                    <div class="news_list_item_text">
+                                        オンラインショップリニューアルオープンのお知らせ
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="news_list_item">
+                                <a href="">
+                                    <img src="./image/news_2.png" alt="2022年11月「Fudo Food」ストアオープン！">
+                                    <div class="news_list_item_date">
+                                        2022/11/21
+                                    </div>
+                                    <div class="news_list_item_text">
+                                        2022年11月「Fudo Food」ストアオープン！
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="news_list_item">
+                                <a href="">
+                                    <img src="./image/news8.png" alt="「極上の仕送りカレー」本日2月20日10時より、先行予約スタート！">
+                                    <div class="news_list_item_date">
+                                        2022/02/20
+                                    </div>
+                                    <div class="news_list_item_text">
+                                        「極上の仕送りカレー」本日2月20日10時より、先行予約スタート！
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="view_all">
+                            <a href="">
+                                <span>View All</span>
+                            </a>
+                            <div class="view_all_btn"></div>
+                            <div class="view_all_btn_next"></div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section class="faq">
                 <div class="faq_title">
