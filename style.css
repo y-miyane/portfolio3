@@ -606,11 +606,13 @@ brand
 .brand_img{
     width: 100px;
     height: 100px;
+    overflow: hidden;
 }
 
 .brand_img img{
     width: 100%;
     height: auto;
+    transition: all 0.7s;
 }
 
 .brand_detail{
@@ -630,9 +632,29 @@ brand
     line-height: 1.4;
 }
 
+.brand_detail{
+    transition: opacity 0.3s ease;
+}
 
-.brand_name{
+.brand1 .brand_name{
+    width: 90px;
+}
+
+.brand2 .brand_name{
+    width: 160px;
+}
+
+.brand3 .brand_name{
+    width: 180px;
+}
+
+.brand4 .brand_name{
     width: 65px;
+}
+
+.brand5 .brand_text{
+    font-size: 1.3rem;
+    margin-bottom: 0;
 }
 
 .brand_name img{
@@ -640,12 +662,21 @@ brand
     height: auto;
 }
 
+.brand_wrap li:hover:hover .brand_img img{
+    transform: scale(1.03);
+}
+
+
+
 .brand_wrap ul li {
     flex-grow: 1;
     flex-basis: calc(calc(100% - 60px) / 3); 
     max-width: calc(calc(100% - 60px) / 3); 
 }
 
+.brand_wrap li:hover .brand_detail{
+    opacity: 0.6;
+}
 
 /*--------------------------------------
 ----------------------------------------
@@ -1267,7 +1298,7 @@ news　スライドショーEND
     transition: width 0.5s ease-out; 
 }
 
-.view_all a span:hover::after {
+.view_all a span.none::after {
     width: 0; 
 }
 
@@ -1702,6 +1733,17 @@ footer
     border-top: 1px solid #eaeaea;
     padding: 56px 0;
 }
+
+.footer_copy_logo{
+    width: 180px;
+}
+
+.footer_copy_logo img{
+    width: 100%;
+    height: auto;
+    vertical-align: 0;
+}
+
 
 .footer_copy_wrap{
     position: relative;

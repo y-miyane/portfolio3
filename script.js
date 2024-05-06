@@ -29,6 +29,17 @@ $(document).ready(function() {
     });
 });
 
+// news view_allボタン //
+
+$(document).ready(function() {
+    $(".view_all a").hover(function() {
+        $(".view_all span").addClass("none");
+    }, function() {
+        $(".view_all span").removeClass("none");
+    });
+});
+
+
 
 // faqボタン //
 
