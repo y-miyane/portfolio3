@@ -1,15 +1,33 @@
 
+// header //
+
 $(document).ready(function() {
     $(".header_icon_hmb").click(function() {
       $(".header_wrap").toggleClass("open");
+      $("body").toggleClass("no-scroll");
     });
 });
 
+
+$(document).ready(function() {
+
+    const imageArea = document.getElementById('imageArea');
+    const images = ['image/header_nav_img1.png', 'image/header_nav_img2.png', 'image/header_nav_img3.png'];
+
+    const imageNo = Math.floor(Math.random() * images.length);
+    imageArea.src = images[imageNo];
+});
+
   
-
-
-
-
+$(document).ready(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+            $('header').addClass('fixed');
+        } else {
+            $('header').removeClass('fixed');
+        }
+    });
+});
 
 
 // faqボタン //
