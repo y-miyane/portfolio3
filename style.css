@@ -180,7 +180,7 @@ header.fixed .header_icon{
     width: 100%;
 }
 
-.logo img{
+.logo {
     width: 235px;
     position: absolute;
     top: 40px;
@@ -1364,9 +1364,10 @@ faq
     width: 89vw;
 }
 
-.faq_title{
+.faq_title_wrap{
     width: 286px;
 }
+
 
 .faq_detail{
     width: calc(100% - 286px);

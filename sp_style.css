@@ -1,4 +1,281 @@
 @media screen and (max-width: 768px) {
+
+    main {
+        position: relative;
+    }
+    
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+    
+    img{
+        vertical-align: bottom;
+        border: none;
+    }
+    
+    ul,li{
+        list-style: none;
+    }
+    
+    
+    .postagefree{
+        height: 40px;
+        font-size: 0.8rem;
+    }
+    
+    .text_red{
+        color: #c91804;
+    }
+    
+    .text_nomal{
+        margin-left: 15px;
+        color: #fff;
+    }
+    
+    
+    
+    header{
+        width: 100%;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        z-index: 100;
+    }
+    
+    header.fixed .header_logo{
+        display: block;
+        position: fixed;
+        top: 37px;
+        left: -45px;
+        z-index: 100;
+    }
+    
+    .header_logo{
+        display: none;
+    }
+    
+    
+    .header_logo img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .header_wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px 0 35px;
+    }
+    
+    .header_nav{
+        display: flex;
+        align-items: center;
+        padding: 24px 0;
+        justify-content: flex-end;
+        position: relative;
+        width: 100%;
+    }
+    
+    .header_nav_list{
+        display: none;
+    }
+    
+    
+    .header_nav_list_item a{
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+    
+    .header_icon{
+        display: flex;
+        position: fixed;
+        z-index: 1000;
+        top: 64px;
+        right: 24px;
+        transition: all .5s;
+    }
+    
+    .header_icon img{
+        width: 22px;
+        height: auto;
+    }
+    
+    .header_icon_mypage{
+        padding: 0 10px;
+        margin-right: 10px;
+    }
+    
+    .header_icon_cart{
+        padding: 0 10px;
+    }
+    
+    header.fixed .header_icon{
+        top: 24px;
+    }
+    
+    
+    
+    .header_icon_mypage,.header_icon_cart,.header_icon_hmb{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        mix-blend-mode: exclusion;
+    }
+    
+    
+    .header_icon_hmb {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        z-index: 30;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        padding: 22px 0;
+    }
+    
+    .header_icon_hmb span {
+        width: 24px;
+        height: 1.5px;
+        background-color: #000;
+    }
+    
+    .header_nav_list_item a {
+        transition: opacity 0.3s ease; 
+    }
+    
+    .header_nav_list_item:hover a {
+        opacity: 0.5; 
+    }
+    
+    
+    
+    
+    .top{
+        width: 100%;
+        position: relative;
+    }
+    
+    .top_slide{
+        margin-left: 0;
+    }
+    
+    
+    .top_slide img{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .logo{
+        width: 30%;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        z-index: 10;
+    }
+    
+    
+    .sns_link_top img{
+        filter: brightness(0) invert(1);
+    }
+    
+    
+    .top_slide_wrap{
+        height: calc(100svh - 40px);
+    }
+    
+    
+    .top_slide_wrap .fade li {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        animation: fade 30s infinite;
+      }
+      
+      .top_slide_wrap .fade li:nth-child(1) {
+        animation-delay: 0s;
+      }
+      
+      .top_slide_wrap .fade li:nth-child(2) {
+        animation-delay: 7s;
+      }
+     
+      .top_slide_wrap .fade li:nth-child(3) {
+        animation-delay: 14s;
+      }
+    
+      .top_slide_wrap .fade li:nth-child(4) {
+        animation-delay: 21s; 
+      }
+    
+    
+    
+      .top_slide_wrap .fade li img {
+        width: 100%;
+        height: calc(100vh - 46px);
+        object-fit: cover;
+        transform: scale(1);
+      }
+      
+      @keyframes fade {
+        0% {
+          opacity: 0;
+          transform: scale(1);
+        }
+        15% {
+          opacity: 1;
+        }
+        30% {
+          opacity: 1;
+        }
+        45% {
+          opacity: 0;
+          transform: scale(1.1);
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      
+    
+    
+    .sns_link_top {
+        position: absolute;
+        width: 120px;
+        padding: 56px 0;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 4;
+    }
+    
+    .sns_link_top_fb{
+        margin-top: 20px;
+    }
+    
+    .sns_link_top_in,.sns_link_top_fb {
+        transition: opacity 0.3s ease; 
+    }
+    
+    .sns_link_top_in:hover{
+        opacity: 0.6;
+    }
+    
+    .sns_link_top_fb:hover{
+        opacity: 0.6;
+    }
+    
+    
     
 /*----------------------------------
 header ハンバーガーメニュー
@@ -396,33 +673,28 @@ about
 ----------------------------------------*/
 
 #about{
-    margin-top: 112px;
-    width: 100%;
-    background: url(./image/about.png) bottom center no-repeat;
-    background-size: cover;
+    margin-top: 55px;
 }
 
 .about_wrap{
-    position: relative;
-    width: 89vw;
-    max-width: 1126px;
-    margin: 0 auto;
-    padding: 88px 0 28%;
-    max-height: 1140px;
+    padding: 56px 0 70%;
 }
 
 .about_title{
-    font-size: 3rem;
+    font-size: 1.5rem;
     line-height: 1.6;
-    text-align: center;
+    text-align: left;
 }
 
 .about_text{
-    margin-top: 60px;
-    text-align: center;
-    font-size: 1rem;
-    letter-spacing: .02em;
-    line-height: 2.6;
+    font-size: 0.8rem;
+    line-height: 2.15;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.pc_br{
+    display: none;
 }
 
 .detail_btn {
@@ -480,7 +752,7 @@ about
 
 .title_small{
     position: relative;
-    width: 26px;
+    width: 20px;
 }
 
 #about .title_small{
@@ -490,19 +762,15 @@ about
 }
 
 .title_small span{
-    writing-mode: vertical-rl;
-    padding: 16px 0;
-    font-size: 0.7rem;
-    line-height: 50px;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.1em;
+    font-size: 0.5rem;
+    line-height: 20px;
 }
 
 .title_small::before,.title_small::after{
     background: url(./image/title_deco.svg) no-repeat;
     content: '';
-    width: 26px;
-    height: 6px;
+    width: 19px;
+    height: 5px;
     position: absolute;
 }
 
@@ -539,20 +807,18 @@ topics
 
 .topics_title{
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 50px;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
 }
 
 .topics_text{
-    font-size: 0.8rem;
-    line-height: 1.6;
-    margin-top: 24px;
+    margin-top: 16px;
 }
 
 .topics_article{
-    display: flex;
-    justify-content: space-between;
-    gap: 0 5%;
+    flex-direction: column;
+    gap: 24px 0;
+
 }
 
 .topics_banner{
@@ -1062,29 +1328,35 @@ faq
 ----------------------------------------
 ----------------------------------------*/
 #faq{
-    margin-top: 120px;
+    margin-top: 50px;
     width: 100%;
 }
 
 .faq_wrap{
-    position: relative;
-    max-width: 1126px;
-    margin: 0 auto;
-    display: flex;
-
+    display: block;
     width: 89vw;
 }
 
+.faq_title_wrap{
+    width: 100%;
+}
+
 .faq_title{
-    width: 286px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .faq_detail{
-    width: calc(100% - 286px);
+    width: 100%;
 }
 
 .faq_title_text{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    width: calc(100% - 26px);
+    padding-right: 26px;
+    
 }
 
 .faq_detail_list{
@@ -1190,9 +1462,9 @@ faq
 
 
 #faq .title_small{
-    position: absolute;
-    top: 0;
-    left: -73px;
+    position: relative;
+    top: auto;
+    left: auto;
 }
 
 /*--------------------------------------
