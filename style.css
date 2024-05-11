@@ -583,7 +583,7 @@ brand
     height: 100%;
 }
 
-.brand_wrap ul{
+.brand_wrap .brand_list{
     max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -677,6 +677,8 @@ brand
 .brand_wrap li:hover .brand_detail{
     opacity: 0.6;
 }
+
+
 
 /*--------------------------------------
 ----------------------------------------
@@ -876,6 +878,10 @@ products
     margin-top: 120px;
 }
 
+.products_select_btn{
+    display: none;
+}
+
 .products_wrap{
     width: 89vw;
     position: relative;
@@ -889,21 +895,21 @@ products
     font-size: 2rem;
 }
 
-.products_menu_nev_item + .products_menu_nev_item{
+.products_menu_nav_item + .products_menu_nav_item{
     margin-top: 16px;
 }
 
-.products_menu_nev_item{
+.products_menu_nav_item{
     font-size: 0.8rem;
     font-family: sans-serif;
     
 }
 
-.products_menu_nev_item a:hover {
+.products_menu_nav_item a:hover {
     color: rgba(128, 128, 128, 0.8); 
 }
 
-.products_menu_nev_item a{
+.products_menu_nav_item a{
     transition: color 0.3s ease;
 }
 

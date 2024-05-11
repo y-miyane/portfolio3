@@ -69,4 +69,27 @@ $(document).ready(function() {
     });
 });
 
-
+        
+// spのbrand スライダー //
+$(function(){
+    function sliderSetting(){
+        var width = $(window).width();
+        if(width <= 768){
+            $('.brand_list').not('.slick-initialized').slick({
+                centerMode: false,
+                arrows:true,
+                infinite: true,
+                dots:true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerPadding: '0px',
+            });
+        } else {
+            $('.slide.slick-initialized').slick('unslick');
+        }
+    }
+    sliderSetting();
+    $(window).resize(function(){
+        sliderSetting();
+    });
+});

@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="./reset.css">
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="./sp_style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
     </head>
     <body>
         <header>
@@ -220,7 +222,7 @@
             </section>
             <div id="brand">
                 <div class="brand_wrap">
-                    <ul>
+                    <ul class="brand_list">
                         <li class="brand1">
                             <a href="">
                                 <div class="brand_img">
@@ -370,38 +372,48 @@
                                 </div>
                             </h2>
                             <ul class="products_menu_nav">
-                                <li class="products_menu_nev_item">
+                                <li class="products_menu_nav_item">
                                     <a href="">
                                         全ての商品
                                     </a>
                                 </li>
-                                <li class="products_menu_nev_item">
+                                <li class="products_menu_nav_item">
                                     <a href="">
                                         いつでもレストラン
                                     </a>
                                 </li>
-                                <li class="products_menu_nev_item">
+                                <li class="products_menu_nav_item">
                                     <a href="">
                                         贅沢ハンバーグ
                                     </a>
                                 </li>
-                                <li class="products_menu_nev_item">
+                                <li class="products_menu_nav_item">
                                     <a href="">
                                         牛肉ゴロっとカレー
                                     </a>
                                 </li>
-                                <li class="products_menu_nev_item">
+                                <li class="products_menu_nav_item">
                                     <a href="">
                                         JAM TODAY
                                     </a>
                                 </li>
-                                <li class="products_menu_nev_item">
+                                <li class="products_menu_nav_item">
                                     <a href="">
                                         セレクト商品
                                     </a>
                                 </li>
                             </ul>
                         </div>
+                    </div>
+                    <div class="products_select_btn">
+                        <select>
+                            <option value="all">全て</option>
+                            <option value="frozen">いつでもレストラン</option>
+                            <option value="hayashi">贅沢和風ハンバーグ</option>
+                            <option value="curry">豚肉の絶品カレー</option>
+                            <option value="jam">JAM TODAY</option>
+                            <option value="select">セレクト商品</option>					
+                        </select>
                     </div>
                     <div class="products_all">                       
                         <ul class="products_list">
@@ -983,6 +995,8 @@
             </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        
         <script src="script.js"></script>
     </body>
 </html>

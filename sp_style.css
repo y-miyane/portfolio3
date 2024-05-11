@@ -288,17 +288,6 @@ body.no-scroll{
     display: none;
 }
 
-.header_wrap.open .hmb_menu_all{
-    position: fixed;
-    display: flex;
-    background-color: #fff;
-    height: 100vh;
-    z-index: 200;
-    width: 100%;
-    top: 0;
-    left: 0;
-
-}
 
 
 .header_wrap.open .header_icon_mypage{
@@ -328,14 +317,11 @@ body.no-scroll{
 }
 
 .hmb_menu_nav_top{
-    width: 100%;
-    align-items: center;
-    display: flex;
+    display: block;
 }
 
 .hmb_menu_img{
-    width: 40%;
-    height: 100%;
+    display: none;
 }
 
 .hmb_menu_img img{
@@ -345,24 +331,22 @@ body.no-scroll{
 }
 
 .hmb_menu_nav{
-    width: 60%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
 }
 
 .hmb_menu_nav_wrap{
-    width: 70%;
+    width: 100%;
+    max-width: 600px;
 }
 
 .hmb_menu_nav_logo{
-    width: 50%;
+    width: 40%;
+    margin: 0 auto 40px;
 }
 
-.hmb_menu_nav_logo a{
-    display: block;
-    width: 80%;
+.hmb_menu_nav_logo a {
+    width: auto;
 }
 
 .hmb_menu_nav_logo img{
@@ -371,7 +355,9 @@ body.no-scroll{
 
 
 .hmb_menu_nav_btn {
-    width: 50%;
+    display: flex;
+    width: 100%;
+    gap: 0 20px;
 }
 
 .hmb_menu_nav_btn a{
@@ -389,7 +375,7 @@ body.no-scroll{
 }
 
 .btn_2{
-    margin-top: 16px;
+    margin-top: 0;
 }
 
 .hmb_menu_nav_btn .mypage{
@@ -449,10 +435,7 @@ body.no-scroll{
 }
 
 .hmb_inner_wrap{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 54px;
+   margin-top: 40px;
 }
 
 .hmb_inner_list{
@@ -460,17 +443,17 @@ body.no-scroll{
 }
 
 .hmb_inner_list_item a{
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     font-weight: 600;
 }
 
 .hmb_inner_list .hmb_item_small{
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: 400;
 }
 
 .hmb_inner_list_item + .hmb_inner_list_item{
-    margin-top: 16px;
+    margin-top: 6px;
 }
 
 .hmb_inner_list_bottom{
@@ -485,20 +468,17 @@ body.no-scroll{
 }
 
 .hmb_inner_list_bottom_item a{
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
 .hmb_inner_list_bottom li:nth-child(3), .hmb_inner_list_bottom li:nth-child(4),
 .hmb_inner_list_bottom li:nth-child(5){
-    margin-top: 12px;
+    margin-top: 0;
 }
 
 
 .hmb_inner_sns{
-    width: 100%;
-    border-top: 1px solid #eaeaea;
-    display: flex;
-    margin-top: 50px;
+    margin-top: 40px;
     padding-top: 40px;
 }
 
@@ -548,20 +528,12 @@ brand
 ----------------------------------------*/
 
 #brand{
-    width: 100%;
-    padding: 96px 0;
-    position: relative;
+    padding: 30px 20px;
 }
 
 #brand::before {
-    content: '';
-    width: 95%;
-    background-color: #fafafa;
-    height: calc(100% + 170px);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
+    width: 100%;
+    height: 100%;
 }
 
 .brand_wrap{
@@ -571,100 +543,11 @@ brand
     height: 100%;
 }
 
-.brand_wrap ul{
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    gap: 25px 30px;
-    position: relative;
+.brand_wrap .brand_list {
     width: 100%;
-    height: 100%;
     z-index: 1;
-    display: flex;
-    box-sizing: content-box;
-    
 }
 
-.brand_wrap a{
-    display: flex;
-    color: #000;
-    text-decoration: none;
-}
-
-.brand_img{
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-}
-
-.brand_img img{
-    width: 100%;
-    height: auto;
-    transition: all 0.7s;
-}
-
-.brand_detail{
-    width: calc(100% - 100px);
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.brand_text{
-    margin-bottom: 5px;
-    text-align: center;
-    font-size: 0.7rem;
-    transform: scale(.9);
-    line-height: 1.4;
-}
-
-.brand_detail{
-    transition: opacity 0.3s ease;
-}
-
-.brand1 .brand_name{
-    width: 90px;
-}
-
-.brand2 .brand_name{
-    width: 160px;
-}
-
-.brand3 .brand_name{
-    width: 180px;
-}
-
-.brand4 .brand_name{
-    width: 65px;
-}
-
-.brand5 .brand_text{
-    font-size: 1.3rem;
-    margin-bottom: 0;
-}
-
-.brand_name img{
-    width: 100%;
-    height: auto;
-}
-
-.brand_wrap li:hover:hover .brand_img img{
-    transform: scale(1.03);
-}
-
-
-
-.brand_wrap ul li {
-    flex-grow: 1;
-    flex-basis: calc(calc(100% - 60px) / 3); 
-    max-width: calc(calc(100% - 60px) / 3); 
-}
-
-.brand_wrap li:hover .brand_detail{
-    opacity: 0.6;
-}
 
 /*--------------------------------------
 ----------------------------------------
@@ -684,6 +567,11 @@ about
     font-size: 1.5rem;
     line-height: 1.6;
     text-align: left;
+    padding-left: 30px;
+}
+
+.about_title_wrap{
+    display: flex;
 }
 
 .about_text{
@@ -698,23 +586,16 @@ about
 }
 
 .detail_btn {
-    margin: 0;
-    width: 200px;
-    height: 48px;
-    line-height: 46px;
-    text-align: center;
-    color: #000;
-    text-decoration: none;
-    position: relative;
-    border-radius: 24px;
-    border: 1px solid #000;
-    display: block;
-    transition: all .3s
+    width: 170px;
+    height: 40px;
+    line-height: 38px;
+    transition: all .5s;
 }
 
 #about .detail_btn{
-    margin: 40px auto 0;
-    cursor: pointer;
+    width: 170px;
+    height: 40px;
+    line-height: 38px;
     transition: all .5s;
 }
 
@@ -723,7 +604,7 @@ about
 }
 
 .detail_btn span{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .detail_btn_arrow{
@@ -756,9 +637,9 @@ about
 }
 
 #about .title_small{
-    position: absolute;
-    left: -73px;
-    top: 88px;
+    position: relative;
+    left: 0;
+    top: 0;
 }
 
 .title_small span{
@@ -777,13 +658,13 @@ about
 .title_small::before{
     top: 0;
     left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .title_small::after{
-    transform: rotate(180deg);
-    bottom: 5px;
+    bottom: 0;
     left: 50%;
-
+    transform: translate(-50%, 0) rotate(180deg);
 }
 
 
@@ -854,39 +735,72 @@ products
 }
 
 .products_wrap{
-    width: 89vw;
+    display: block;
+}
+
+.products_menu_nav{
+    display: none;
+}
+
+.products_menu{
+    width: 100%;
     position: relative;
-    max-width: 1126px;
-    margin: 0 auto;
+    top: 0;
+}
+
+.products_title_wrap{
     display: flex;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
 .products_menu_title{
-    margin-bottom: 40px;
-    font-size: 2rem;
+    width: calc(100% - 26px);
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    padding-right: 26px;
 }
 
-.products_menu_nev_item + .products_menu_nev_item{
-    margin-top: 16px;
+.products_menu_wrap{
+    width: 100%;
+    position: relative;
+    top: auto;
+    left: auto;
 }
 
-.products_menu_nev_item{
-    font-size: 0.8rem;
-    font-family: sans-serif;
-    
+.products_select_btn{
+    display: block;
+    position: relative;
 }
 
-.products_menu_nev_item a:hover {
-    color: rgba(128, 128, 128, 0.8); 
+.products_select_btn select{
+    margin: 0;
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    border-radius: 29px;
+    border: 1px solid #000;
+    display: block;
+    padding: 0px 30px;
+    appearance: none;
 }
 
-.products_menu_nev_item a{
-    transition: color 0.3s ease;
+.products_select_btn select::after{
+    content: "";
+    background: url(./image/icon_down.svg);
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    width: 10px;
+    height: 5px;
 }
 
-
-.products_menu{
-    display: none;
+.products_select_btn select:focus {
+    outline: none;
 }
 
 .products_all{
@@ -897,7 +811,8 @@ products
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 60px 7%;
+    gap: 30px 7%;
+    margin-top: 40px;
 }
 
 .products_list_item{
@@ -923,8 +838,8 @@ products
 
 
 .products_list_title{
-    margin-top: 24px;
-    font-size: 1rem;
+    margin-top: 20px;
+    font-size: 0.85rem;
     line-height: 1.7;
 }
 
@@ -935,7 +850,7 @@ products
 }
 
 .products_list_price_num{
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .products_list_text{
@@ -961,24 +876,9 @@ products
 }
 
 
-.products_list_item:hover .detail_btn{
-    background-color: #000;
-}
-
-.products_list_item:hover .detail_btn span {
-    color: #fff;
-}
-
-.products_list_item:hover .detail_btn_arrow {
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
-}
-
-
 #products .title_small{
-    position: absolute;
-    top: 0;
-    left: -73px;
+    left: 0;
+    position: relative;
 }
 
 
@@ -1039,10 +939,6 @@ ranking
     color: #fff;
     position: absolute;
     z-index: 2;
-}
-
-.ranking_list_btn{
-    margin: 24px 0 0 0;
 }
 
 .ranking_list_no.rank1{
@@ -1308,9 +1204,7 @@ news　スライドショーEND
 }
 
 #news .title_small{
-    position: absolute;
-    top: 0;
-    left: -73px;
+    left: 0;
 }
 
 
