@@ -410,19 +410,7 @@ body.no-scroll{
 
 .hmb_menu_nav_btn .mypage span{
     font-size: 0.9em;
-    margin-left: 12spx;
-}
-
-.hmb_menu_nav_btn .mypage span::before{
-    content: '';
-    width: 18px;
-    height: 22px;
-    background: url(./image/icon_mypage.svg) no-repeat;
-    background-size: 100% auto;
-    left: 0;
-    top: 50%;
-    transform: translate(0, -50%);
-    position: absolute;
+    margin-left: 10px;
 }
 
 .hmb_menu_nav_btn .cart{
@@ -435,16 +423,13 @@ body.no-scroll{
     margin-left: 12px;
 }
 
-.hmb_menu_nav_btn .cart span::before{
-    content: '';
-    width: 18px;
-    height: 22px;
-    background: url(./image/icon_cart.svg) no-repeat;
-    background-size: 100% auto;
-    left: 20px;
-    top: 50%;
-    transform: translate(0, -50%);
-    position: absolute;
+.hmb_menu_nav_btn_icon{
+    width: 17px;
+    height: auto;
+}
+
+.hmb_menu_nav_btn_icon img{
+    padding: 15px 0;
 }
 
 .hmb_menu_nav_btn.mypage {
@@ -963,7 +948,7 @@ products
 .products_list_price{
     margin-top: 8px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .products_list_price_num{

@@ -93,3 +93,13 @@ $(function(){
         sliderSetting();
     });
 });
+
+
+// spのproducts ドロップダウンメニュー //
+$(document).ready(function(){
+    $("select").change(function(){
+        var selectedOption = $(this).val();
+        $("[class^='products_all_']").hide();
+        $(".products_all_" + selectedOption).show();
+    });
+});
