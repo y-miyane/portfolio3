@@ -890,13 +890,28 @@ products
     
 }
 
-.products_menu_nav_item a:hover {
+.products_menu_nav_item .products_menu_btn:hover {
     color: rgba(128, 128, 128, 0.8); 
 }
 
-.products_menu_nav_item a{
+.products_menu_nav_item .products_menu_btn{
     transition: color 0.3s ease;
 }
+
+.products_menu_nav_item button{
+    background-color: transparent;
+    cursor: pointer;
+    appearance: none;
+    color: rgb(0, 0, 0);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    outline: none;
+    padding: 0px;
+    text-decoration: none;
+}
+
 
 
 .products_menu{
@@ -941,7 +956,7 @@ products
 
 .products_list_title{
     margin-top: 24px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.7;
 }
 
@@ -998,6 +1013,30 @@ products
     left: -73px;
 }
 
+.products_all_restaurant{
+    display: none;
+}
+
+.products_all_hamburg{
+    display: none;
+}
+
+.products_all_curry{
+    display: none;
+}
+
+.products_all_jam{
+    display: none;
+}
+
+.products_all_select{
+    display: none;
+}
+
+
+.products_menu_btn.select{
+    opacity: .5;
+}
 
 /*--------------------------------------
 ----------------------------------------
@@ -1337,6 +1376,24 @@ news　スライドショーEND
     top: 0;
     left: -73px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*--------------------------------------

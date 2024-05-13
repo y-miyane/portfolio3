@@ -29,6 +29,20 @@ $(document).ready(function() {
     });
 });
 
+// productsボタン //
+
+$(document).ready(function(){
+    $(".products_menu_btn").click(function(){
+        var category = $(this).data("category");
+        $("[class^='products_all_']").hide();
+        $(".products_all_" + category).show();
+        $(".products_menu_btn").removeClass("select");
+        $(this).addClass("select");
+    });
+});
+
+
+
 // news view_allボタン //
 
 $(document).ready(function() {
@@ -103,3 +117,5 @@ $(document).ready(function(){
         $(".products_all_" + selectedOption).show();
     });
 });
+
+
