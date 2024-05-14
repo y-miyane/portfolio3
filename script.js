@@ -1,3 +1,12 @@
+$(function() {
+    setTimeout(function(){
+        $('.start p, .start_dots').fadeIn(500);
+    }, 500); 
+    setTimeout(function(){
+        $('.start').fadeOut(500);
+    }, 2500); 
+});
+
 
 // header //
 
@@ -40,6 +49,16 @@ $(document).ready(function(){
         $(this).addClass("select");
     });
 });
+
+// productsスライダー //
+$('.news_list').slick({
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    prevArrow: '<div class="view_all_btn_arrow"></div>',
+    nextArrow: '<div class="view_all_btn_arrow_next"></div>',
+    speed: 1000,
+    variableWidth: true,
+  });
 
 
 
