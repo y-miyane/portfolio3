@@ -1,9 +1,11 @@
 $(function() {
     setTimeout(function(){
         $('.start p, .start_dots').fadeIn(500);
+        $("body").addClass("no-scroll");
     }, 500); 
     setTimeout(function(){
         $('.start').fadeOut(500);
+        $("body").removeClass("no-scroll");
     }, 2500); 
 });
 
@@ -135,6 +137,27 @@ $(document).ready(function(){
         $("[class^='products_all_']").hide();
         $(".products_all_" + selectedOption).show();
     });
+});
+
+
+
+// フェードイン//
+
+$(document).ready(function() {
+    $(window).on('scroll', function() {
+        $('.fadein').each(function() {
+            var elementTop = $(this).offset().top;
+            var elementBottom = elementTop + $(this).outerHeight();
+            var viewportTop = $(window).scrollTop();
+            var viewportBottom = viewportTop + $(window).height();
+            
+            if (elementBottom > viewportTop && elementTop < viewportBottom) {
+                $(this).addClass('scrollin');
+            }
+        });
+    });
+
+    $(window).trigger('scroll');
 });
 
 

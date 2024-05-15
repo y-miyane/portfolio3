@@ -7,7 +7,7 @@ main {
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 100%;
+	height: 100vh;
 	width: 100%;
 	z-index: 9000;
 }
@@ -25,7 +25,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 48%;
+    left: 47.5%;
     top: 60%;
     position: absolute;
 
@@ -42,6 +42,34 @@ main {
 .start_dots span+span{
     margin-left: 20px;
 }
+
+
+.start_dots span {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInDrop 1s forwards;
+}
+
+.start_dots span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.start_dots span:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.start_dots span:nth-child(3) {
+    animation-delay: 1s;
+}
+
+@keyframes fadeInDrop {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 
 a{
     text-decoration: none;
@@ -77,6 +105,17 @@ ul,li{
     margin-left: 15px;
     color: #fff;
 }
+
+
+.fadein{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fadein.scrollin{
+    opacity: 1;
+}
+
 
 
 
@@ -339,6 +378,7 @@ body.no-scroll{
 
 .hmb_menu_all{
     display: none;
+    transition: opacity 0.9s ease-in-out;
 }
 
 .header_wrap.open .hmb_menu_all{
@@ -754,13 +794,11 @@ about
     border-radius: 24px;
     border: 1px solid #000;
     display: block;
-    transition: all .3s
 }
 
 #about .detail_btn{
     margin: 40px auto 0;
     cursor: pointer;
-    transition: all .5s;
 }
 
 .detail_btn_arrow a{
