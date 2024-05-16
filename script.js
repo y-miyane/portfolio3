@@ -52,15 +52,31 @@ $(document).ready(function(){
     });
 });
 
-// productsスライダー //
-$('.news_list').slick({
-    pauseOnFocus: false,
-    pauseOnHover: false,
-    prevArrow: '<div class="view_all_btn_arrow"></div>',
-    nextArrow: '<div class="view_all_btn_arrow_next"></div>',
-    speed: 1000,
-    variableWidth: true,
-  });
+// newsスライダー //
+$(function(){
+    $('.news_list').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: false,
+        variableWidth: true,
+        speed: 300,  
+        prevArrow: $('.view_all_btn'),
+        nextArrow: $('.view_all_btn_next'),
+        responsive: [{
+            breakpoint: 599, 
+            settings: {
+                slidesToShow: 3,
+                variableWidth: true,
+                speed: 300, 
+            }
+        }]
+    });
+});
+
+
+$('.news_list').on('setPosition', function(){
+    $('.slick-list').css('overflow', 'visible');
+});
 
 
 

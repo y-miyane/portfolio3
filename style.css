@@ -1243,6 +1243,7 @@ news
 
 .news_wrap{
     position: relative;
+    overflow: hidden;
 }
 
 .news_body{
@@ -1334,30 +1335,15 @@ news
     transform: scale(1.03);
 }
 
-/*----------------------------------
-news　スライドショー
-------------------------------------*/
 .news_list::-webkit-scrollbar{
     display: none;
 }
 
-
-
-
-  
   
 .news_body_inner {
     position: relative;
 }
 
-
-
-
-
-
-/*---------------------------------
-news　スライドショーEND
------------------------------------*/
 
 
 .view_all{
@@ -1453,6 +1439,15 @@ news　スライドショーEND
 .view_all_btn:hover .view_all_btn_arrow {
     border-bottom: 1px solid #fff;
     border-left: 1px solid #fff;
+}
+
+.view_all_btn_next:hover{
+    background-color: #000;
+}
+
+.view_all_btn_next:hover .view_all_btn_arrow_next {
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
 }
 
 #news .title_small{
