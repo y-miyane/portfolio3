@@ -55,21 +55,28 @@ $(document).ready(function(){
 });
 
 // newsスライダー //
-$(function(){
+$(function() {
     $('.news_list').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: false,
         variableWidth: true,
-        speed: 300,  
+        speed: 300,
         prevArrow: $('.view_all_btn'),
         nextArrow: $('.view_all_btn_next'),
         responsive: [{
-            breakpoint: 599, 
+            breakpoint: 1200,
             settings: {
-                slidesToShow: 3,
-                variableWidth: true,
-                speed: 300, 
+                slidesToShow: 2, 
+                variableWidth: true, 
+                speed: 300,
+            }
+        }, {
+            breakpoint: 599,
+            settings: {
+                slidesToShow: 1, 
+                variableWidth: false, 
+                speed: 300,
             }
         }]
     });
@@ -79,6 +86,7 @@ $(function(){
 $('.news_list').on('setPosition', function(){
     $('.slick-list').css('overflow', 'visible');
 });
+
 
 
 
@@ -92,6 +100,35 @@ $(document).ready(function() {
     });
 });
 
+
+
+$('.news_list').on('afterChange', function(event, slick, currentSlide) {
+    var totalSlides = slick.slideCount;
+    var slidesToShow = slick.options.slidesToShow;
+
+
+    if (currentSlide === 0) {
+        $('.view_all_btn').removeClass('enabled');
+    } else {
+        $('.view_all_btn').addClass('enabled');
+    }
+
+    if (currentSlide >= totalSlides - slidesToShow) {
+        $('.view_all_btn_next').removeClass('enabled');
+    } else {
+        $('.view_all_btn_next').addClass('enabled');
+    }
+});
+
+
+
+$('.view_all_btn_next').on('click', function() {
+    if ($('.view_all_btn_next').hasClass('enabled')) {
+        $('.view_all_btn').addClass('enabled');
+    }
+});
+
+$('.view_all_btn').removeClass('enabled');
 
 
 // faqボタン //

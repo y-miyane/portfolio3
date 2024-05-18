@@ -376,25 +376,23 @@ body.no-scroll{
     position: fixed;
 }
 
-.hmb_menu_all{
+.header_wrap .hmb_menu_all{
     opacity: 0;
-    transition: opacity 0.6s ease, visibility 0.6s ease;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
     visibility: hidden;
-    display: none;
-}
-
-.header_wrap.open .hmb_menu_all{
-    position: fixed;
-    display: flex;
     background-color: #fff;
     height: 100vh;
     z-index: 200;
     width: 100%;
     top: 0;
     left: 0;
+    position: fixed;
+}
+
+.header_wrap.open .hmb_menu_all{
+    display: flex;
     opacity: 1;
     visibility: visible;
-
 }
 
 
@@ -1460,6 +1458,21 @@ news
     position: absolute;
     top: 0;
     left: -73px;
+}
+
+
+.view_all_btn {
+    pointer-events: none; 
+    opacity: 0.5; 
+}
+
+.view_all_btn.enabled {
+    pointer-events: auto; 
+    opacity: 1; 
+}
+
+.slick-track {
+    width: 3128px !important;
 }
 
 
