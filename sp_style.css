@@ -1014,12 +1014,13 @@ news
 
 .news_list_item{
     margin-right: 46px;
+    width: 285px !important;
 }
 
 
 .news_list_item a{
     display: block;
-    width: 285px;
+    width: 100%;
 }
 
 
