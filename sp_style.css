@@ -54,7 +54,7 @@
     
     header.fixed .header_logo{
         top: 33px;
-        left: 345px;
+        left: 24px;
     }
     
     .header_logo{
@@ -482,16 +482,14 @@ brand
     height: 100%;
 }
 
-.brand_wrap{
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-
 .brand_wrap .brand_list {
     width: 100%;
     z-index: 1;
+    display: block;
+}
+
+.brand_wrap {
+    overflow: hidden;
 }
 
 
@@ -735,14 +733,14 @@ products
     appearance: none;
 }
 
-.products_select_btn select::after{
+.products_select_btn::after{
     content: "";
-    background: url(./image/icon_down.svg);
+    background: url(./image/icon_down.svg) no-repeat;
     position: absolute;
     top: 50%;
     right: 30px;
-    width: 10px;
-    height: 5px;
+    width: 11px;
+    height: 6px;
 }
 
 .products_select_btn select:focus {
@@ -1068,10 +1066,6 @@ news　スライドショー
     display: none;
 }
 
-.news_list{
-    overflow-x: auto;
-    flex-wrap: nowrap;
-}
 
 
 /*---------------------------------

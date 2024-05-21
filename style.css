@@ -131,7 +131,7 @@ header.fixed .header_logo{
     display: block;
     position: fixed;
     top: 37px;
-    left: -45px;
+    left: 30px;
     z-index: 100;
 }
 
@@ -686,7 +686,7 @@ brand
 }
 
 .brand_detail{
-    width: calc(100% - 100px);
+    width: calc(100% - 88px);
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -1472,7 +1472,7 @@ news
     opacity: 1; 
 }
 
-.slick-track {
+#news .slick-track {
     width: 3128px !important;
 }
 
