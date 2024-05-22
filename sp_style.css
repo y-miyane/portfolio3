@@ -55,6 +55,7 @@
     header.fixed .header_logo{
         top: 33px;
         left: 24px;
+        width: 70%;
     }
     
     .header_logo{
@@ -103,17 +104,17 @@
     }
     
     .header_icon img{
-        width: 22px;
+        width: 20px;
         height: auto;
     }
     
     .header_icon_mypage{
-        padding: 0 10px;
-        margin-right: 10px;
+        padding: 0 10px 2px 10px;
+        margin-right: 0;
     }
     
     .header_icon_cart{
-        padding: 0 10px;
+        padding: 0 10px 5px 14px;
     }
     
     header.fixed .header_icon{
@@ -122,17 +123,8 @@
     
     
     
-    .header_icon_mypage,.header_icon_cart,.header_icon_hmb{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        mix-blend-mode: exclusion;
-    }
-    
-    
     .header_icon_hmb {
-        width: 60px;
+        width: 56px;
         height: 60px;
         position: relative;
         z-index: 30;
@@ -146,7 +138,7 @@
     }
     
     .header_icon_hmb span {
-        width: 24px;
+        width: 22px;
         height: 1.5px;
         background-color: #000;
     }
@@ -159,7 +151,16 @@
         opacity: 0.5; 
     }
     
+    .logo{
+        width: 40%;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 10;
+    }
     
+
+
     
     
     .top{
@@ -175,14 +176,6 @@
     .top_slide img{
         height: 100%;
         width: 100%;
-    }
-    
-    .logo{
-        width: 40%;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        z-index: 10;
     }
     
     

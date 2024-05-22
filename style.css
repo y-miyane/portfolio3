@@ -240,6 +240,21 @@ header.fixed .header_icon{
     opacity: 0.5; 
 }
 
+.logo {
+    width: 235px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 10;
+}
+
+.sns_link_top img{
+    display: block;
+    height: 18px;
+}
+
+
+
 
 
 
@@ -259,21 +274,6 @@ header.fixed .header_icon{
     height: 100%;
     width: 100%;
 }
-
-.logo {
-    width: 235px;
-    position: absolute;
-    top: 40px;
-    left: 40px;
-    z-index: 10;
-}
-
-
-.sns_link_top img{
-    display: block;
-    height: 18px;
-}
-
 
 .top_slide_wrap{
     position: relative;
@@ -368,6 +368,9 @@ header.fixed .header_icon{
 }
 
 
+.top_slide_sp{
+    display: none;
+}
 
 /*----------------------------------
 header ハンバーガーメニュー
