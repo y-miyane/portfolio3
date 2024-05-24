@@ -15,7 +15,7 @@ $(function() {
 
 $(document).ready(function() {
     $(".header_icon_hmb").click(function() {
-      $(".header_wrap").toggleClass("open");
+      $(".header_wrap").toggleClass("change");
       $("body").toggleClass("no-scroll");
     });
 });
