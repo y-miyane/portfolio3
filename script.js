@@ -1,24 +1,45 @@
 
-$(function() {
-    setTimeout(function(){
-        $('.start p, .start_dots').fadeIn(500);
-        $("body").addClass("no-scroll");
-    }, 500); 
-    setTimeout(function(){
-        $('.start').fadeOut(500);
-        $("body").removeClass("no-scroll");
-    }, 2500); 
-});
+$(function () {
+    var webStorage = function () {
+      if (sessionStorage.getItem('access')) {
+        
+        $(".start").addClass('is-active');
+      } else {
+        sessionStorage.setItem('access', 'true'); 
+        $(".start_logo").addClass('is-active'); 
+        setTimeout(function () {
+          $(".start").addClass('is-active');
+          $(".start_logo").removeClass('is-active');
+        }, 3000); 
+      }
+    }
+    webStorage();
+  });
 
 
 // header //
 
 $(document).ready(function() {
+    var scrollPosition;
+
     $(".header_icon_hmb").click(function() {
-      $(".header_wrap").toggleClass("change");
-      $("body").toggleClass("no-scroll");
+        if ($("body").hasClass("no-scroll")) {
+            $("body").removeClass("no-scroll").css({
+                position: '',
+                top: ''
+            });
+            window.scrollTo(0, scrollPosition);
+        } else {
+            scrollPosition = window.pageYOffset;
+            $("body").addClass("no-scroll").css({
+                position: 'fixed',
+                top: -scrollPosition + 'px'
+            });
+        }
+        $(".header_wrap").toggleClass("change");
     });
 });
+
 
 
 $(document).ready(function() {
@@ -66,16 +87,23 @@ $(function() {
         prevArrow: $('.view_all_btn'),
         nextArrow: $('.view_all_btn_next'),
         responsive: [{
-            breakpoint: 1200,
+            breakpoint: 768,
             settings: {
                 slidesToShow: 2, 
-                variableWidth: true, 
+                variableWidth: false, 
+                speed: 300,
+            }
+        },{
+            breakpoint: 650,
+            settings: {
+                slidesToShow: 1.8, 
+                variableWidth: false, 
                 speed: 300,
             }
         }, {
-            breakpoint: 644,
+            breakpoint: 500,
             settings: {
-                slidesToShow: 2, 
+                slidesToShow: 1.2, 
                 variableWidth: false, 
                 speed: 300,
             }

@@ -10,24 +10,30 @@ main {
 	height: 100vh;
 	width: 100%;
 	z-index: 9000;
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s;
 }
-.start p {
+
+.start_logo {
 	position: fixed;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	display: none;
 	z-index: 9999;
 	width: auto;
+    opacity: 0;
+    visibility: hidden;
 }
+
 
 .start_dots{
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 47.5%;
-    top: 60%;
-    position: absolute;
+    left: 0%;
+    top: 64%;
+    position: relative;
 
 }
 
@@ -55,11 +61,11 @@ main {
 }
 
 .start_dots span:nth-child(2) {
-    animation-delay: 0.5s;
+    animation-delay: .2s;
 }
 
 .start_dots span:nth-child(3) {
-    animation-delay: 1s;
+    animation-delay: .4s;
 }
 
 @keyframes fadeInDrop {
@@ -67,6 +73,16 @@ main {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.start.is-active{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.start_logo.is-active{
+    opacity: 1;
+    visibility: visible;
 }
 
 
@@ -801,6 +817,7 @@ about
     border-radius: 24px;
     border: 1px solid #000;
     display: block;
+    transition: .5s;
 }
 
 #about .detail_btn{
@@ -1521,7 +1538,7 @@ faq
     border-bottom: 1px solid #eaeaea;
 }
 
-.faq_detail_list_item{
+dt.faq_detail_list_item{
     display: flex;
 }
 
