@@ -478,7 +478,7 @@ body.no-scroll{
 
 .hmb_menu_nav_logo a{
     display: block;
-    width: 80%;
+    width: 85%;
 }
 
 .hmb_menu_nav_logo img{
@@ -513,7 +513,7 @@ body.no-scroll{
 }
 
 .hmb_menu_nav_btn .mypage span{
-    font-size: 0.9em;
+    font-size: 0.8em;
     margin-left: 10px;
 }
 
@@ -540,6 +540,7 @@ body.no-scroll{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 
@@ -600,7 +601,8 @@ body.no-scroll{
     border-top: 1px solid #eaeaea;
     display: flex;
     margin-top: 50px;
-    padding-top: 40px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .hmb_inner_sns_item + .hmb_inner_sns_item{
@@ -613,7 +615,8 @@ body.no-scroll{
 }
 
 .hmb_ig,.hmb_fb{
-    font-size: 0.8em;
+    font-size: 0.85em;
+    letter-spacing: 0.02em;
 }
 
 .hmb_inner_sns_item .hmb_fb span{

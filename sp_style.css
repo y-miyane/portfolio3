@@ -442,7 +442,7 @@ body.no-scroll{
 }
 
 .hmb_ig,.hmb_fb{
-    font-size: 0.8em;
+    font-size: 0.85em;
 }
 
 .hmb_inner_sns_item .hmb_fb span{
@@ -452,8 +452,9 @@ body.no-scroll{
 
 
 .hmb_inner_sns {
-    margin-top: 35px;
-    padding-top: 40px;
+    margin-top: 25px;
+    padding-top: 30px;
+    padding-bottom: 25px;
 }
 
 

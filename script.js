@@ -79,10 +79,10 @@ $(document).ready(function(){
 // newsスライダー //
 $(function() {
     $('.news_list').slick({
-        slidesToShow: 3,
+        slidesToShow: 2.3,
         slidesToScroll: 1,
         infinite: false,
-        variableWidth: true,
+        variableWidth: false,
         speed: 300,
         prevArrow: $('.view_all_btn'),
         nextArrow: $('.view_all_btn_next'),
