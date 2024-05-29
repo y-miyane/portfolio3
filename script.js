@@ -79,7 +79,7 @@ $(document).ready(function(){
 // newsスライダー //
 $(function() {
     $('.news_list').slick({
-        slidesToShow: 2.3,
+        slidesToShow: 2.9,
         slidesToScroll: 1,
         infinite: false,
         variableWidth: false,
@@ -157,26 +157,26 @@ $(document).ready(function() {
 // faqボタン //
 
 $(function() {
-    $(".faq_detail_list_item__btn.a-btn-1").click(function() {
+    $(".faq_detail_list_item.q.q-1").click(function() {
         $(".faq_detail_list_item.a-1").slideToggle("");
     });
 });
 
 $(function() {
-    $(".faq_detail_list_item__btn.a-btn-2").click(function() {
+    $(".faq_detail_list_item.q.q-2").click(function() {
         $(".faq_detail_list_item.a-2").slideToggle("");
     });
 });
 
 $(function() {
-    $(".faq_detail_list_item__btn.a-btn-3").click(function() {
+    $(".faq_detail_list_item.q.q-3").click(function() {
         $(".faq_detail_list_item.a-3").slideToggle("");
     });
 });
 
 
 $(document).ready(function() {
-    $('.faq_detail_list_item__btn').click(function() {
+    $('.faq_detail_list_item').click(function() {
         var secondSpan = $(this).find('span:nth-of-type(2)');
         secondSpan.toggleClass('open');
     });

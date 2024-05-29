@@ -1,3 +1,4 @@
+
 main {
     position: relative;
 }
@@ -1495,9 +1496,6 @@ news
     opacity: 1; 
 }
 
-#news .slick-track {
-    width: 3128px !important;
-}
 
 .view_all_btn_next.slick-arrow.slick-disabled{
     pointer-events: none; 
@@ -1606,14 +1604,7 @@ dt.faq_detail_list_item{
     transition: all .5s;
 }
 
-
-
-.faq_detail_list_item.q:hover .faq_detail_list_item__btn{
-    background-color: #000;
-}
-
 .faq_detail_list_item.q:hover .faq_detail_list_item__btn span{
-    background-color: #fff;
     width: 13px;
     height: 1px;
 }
@@ -1936,4 +1927,61 @@ footer
     font-size: 0.7rem;
     line-height: 1.5;
 }
+
+
+
+@media screen and (min-width: 1121px) {
+
+    .faq_detail_list_item__btn{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #000;
+        background-color: #fff;
+        position: relative;
+        cursor: pointer;
+        transition: all .5s;
+    }
+    
+    .faq_detail_list_item__btn span{
+        width: 13px;
+        height: 1px;
+        top: 50%;
+        left: 50%;
+        background-color: #000;
+        position: absolute;
+        transition: all .5s;
+    }
+    
+
+    .faq_detail_list_item__btn span:nth-of-type(2) {
+        transform: translate(-50%, -50%) rotate(90deg);
+        transition: all .5s;
+    }
+
+    .faq_detail_list_item__btn span:nth-of-type(1){
+        transform: translate(-50%, -50%);
+    }
+    
+    .faq_detail_list_item__btn span:nth-of-type(2).open {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    
+    
+    
+    
+    
+    .faq_detail_list_item.q:hover .faq_detail_list_item__btn{
+        background-color: #000;
+    }
+    
+    .faq_detail_list_item.q:hover .faq_detail_list_item__btn span{
+        background-color: #fff;
+        width: 13px;
+        height: 1px;
+    }
+    
+
+}
+
 
