@@ -593,7 +593,7 @@ body.no-scroll{
 
 .hmb_inner_list_bottom li:nth-child(3), .hmb_inner_list_bottom li:nth-child(4),
 .hmb_inner_list_bottom li:nth-child(5){
-    margin-top: 12px;
+    margin-top: 5px;
 }
 
 
@@ -601,9 +601,9 @@ body.no-scroll{
     width: 100%;
     border-top: 1px solid #eaeaea;
     display: flex;
-    margin-top: 50px;
+    margin-top: 45px;
     padding-top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .hmb_inner_sns_item + .hmb_inner_sns_item{
