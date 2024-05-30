@@ -87,6 +87,41 @@ $(function() {
         prevArrow: $('.view_all_btn'),
         nextArrow: $('.view_all_btn_next'),
         responsive: [{
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 2.6, 
+                variableWidth: false, 
+                speed: 300,
+            }
+        },{
+            breakpoint: 1120,
+            settings: {
+                slidesToShow: 2.3, 
+                variableWidth: false, 
+                speed: 300,
+            }
+        },{
+            breakpoint: 990,
+            settings: {
+                slidesToShow: 2.1, 
+                variableWidth: false, 
+                speed: 300,
+            }
+        },{
+            breakpoint: 880,
+            settings: {
+                slidesToShow: 2, 
+                variableWidth: false, 
+                speed: 300,
+            }
+        },{
+            breakpoint: 840,
+            settings: {
+                slidesToShow: 1.9, 
+                variableWidth: false, 
+                speed: 300,
+            }
+        },{
             breakpoint: 768,
             settings: {
                 slidesToShow: 2, 
@@ -96,14 +131,35 @@ $(function() {
         },{
             breakpoint: 650,
             settings: {
-                slidesToShow: 1.8, 
+                slidesToShow: 1.6, 
                 variableWidth: false, 
                 speed: 300,
             }
         }, {
             breakpoint: 500,
             settings: {
-                slidesToShow: 1.2, 
+                slidesToShow: 1.4, 
+                variableWidth: false, 
+                speed: 300,
+            }
+        },{
+            breakpoint: 450,
+            settings: {
+                slidesToShow: 1.3, 
+                variableWidth: false, 
+                speed: 300,
+            }
+        },{
+            breakpoint: 380,
+            settings: {
+                slidesToShow: 1.1, 
+                variableWidth: false, 
+                speed: 300,
+            }
+        },{
+            breakpoint: 320,
+            settings: {
+                slidesToShow: 1, 
                 variableWidth: false, 
                 speed: 300,
             }
@@ -239,3 +295,14 @@ $(document).ready(function() {
 });
 
 
+$(function(){
+    $('a[href^="#"]').click(function(){
+      var adjust = 0;
+      var speed = 400;
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top + adjust;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+    });
+  });

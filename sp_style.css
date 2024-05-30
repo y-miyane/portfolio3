@@ -578,9 +578,8 @@ about
 }
 
 #about .title_small{
-    position: relative;
     left: 0;
-    top: 0;
+    top: 60px;
 }
 
 .title_small span{
@@ -1140,6 +1139,20 @@ news　スライドショーEND
 
 #news .title_small{
     left: 0;
+}
+
+.view_all_btn:hover, .view_all_btn_next:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.view_all_btn_next:hover .view_all_btn_arrow_next {
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+.view_all_btn:hover .view_all_btn_arrow {
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
 }
 
 
