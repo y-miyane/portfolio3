@@ -642,12 +642,6 @@ topics
 
 }
 
-.topics_banner{
-    display: block;
-    width: 100%;
-    color: #000;
-    text-decoration: none;
-}
 .topics_banner img{
     width: 100%;
     height: auto;
@@ -659,7 +653,7 @@ topics
 }
 
 .topics_img{
-    overflow: hidden;
+    overflow: visible;
 }
 
 
