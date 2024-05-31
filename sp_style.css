@@ -1333,9 +1333,6 @@ footer
     margin-top: 0;
 }
 
-.footer_navi_item a:hover,.footer_navi.thin a:hover {
-    color: rgba(128, 128, 128, 0.8); 
-}
 
 .footer_navi.thin .footer_navi_item {
     width: 50%;
@@ -1360,9 +1357,6 @@ footer
     transition: all .5s;
 }
 
-.footer_btn_mypage:hover, .footer_btn_cart:hover{
-    border: 1px solid #000;
-}
 
 .footer_btn_mypage span{
     padding-left: 30px;
@@ -1453,23 +1447,6 @@ footer
 .footer_sns_btn_fb span::before{
     width: 9px;
     height: 17px;
-}
-
-
-.footer_sns_btn_in:hover,.footer_sns_btn_fb:hover{
-    background-color: #000;
-}
-
-.footer_sns_btn_in:hover,.footer_sns_btn_fb:hover span {
-    color: #fff;
-}
-
-.footer_sns_btn_in:hover:hover span::before {
-    filter: brightness(0) invert(1);
-}
-
-.footer_sns_btn_fb:hover:hover span::before {
-    filter: brightness(0) invert(1);
 }
 
 
