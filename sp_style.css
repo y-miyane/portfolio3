@@ -642,12 +642,6 @@ topics
 
 }
 
-.topics_banner img{
-    width: 100%;
-    height: auto;
-    transition:all 0.7s;
-}
-
 .topics_banner:hover img{
     transform: scale(1.03);
 }
