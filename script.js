@@ -63,7 +63,6 @@ $(document).ready(function() {
 });
 
 
-
 // productsボタン //
 
 $(document).ready(function(){
@@ -173,8 +172,6 @@ $('.news_list').on('setPosition', function(){
 });
 
 
-
-
 // news view_allボタン //
 
 $(document).ready(function() {
@@ -189,24 +186,24 @@ $(document).ready(function() {
 
 
 
-    $('.news_list').on('afterChange', function(event, slick, currentSlide) {
-        var totalSlides = slick.slideCount;
-        var slidesToShow = slick.options.slidesToShow;
+$('.news_list').on('afterChange', function(event, slick, currentSlide) {
+    var totalSlides = slick.slideCount;
+    var slidesToShow = slick.options.slidesToShow;
 
 
-        if (currentSlide === 0) {
-            $('.view_all_btn').removeClass('enabled');
-        } else {
-            $('.view_all_btn').addClass('enabled');
-        }
-        
-    });
+    if (currentSlide === 0) {
+        $('.view_all_btn').removeClass('enabled');
+    } else {
+        $('.view_all_btn').addClass('enabled');
+    }
+    
+});
 
-    $('.view_all_btn_next').on('click', function() {
-        if ($('.view_all_btn_next').hasClass('enabled')) {
-            $('.view_all_btn').addClass('enabled');
-        }
-    });
+$('.view_all_btn_next').on('click', function() {
+    if ($('.view_all_btn_next').hasClass('enabled')) {
+        $('.view_all_btn').addClass('enabled');
+    }
+});
 
 
 
@@ -272,7 +269,6 @@ $(document).ready(function(){
         $(".products_all_" + selectedOption).show();
     });
 });
-
 
 
 // フェードイン//
